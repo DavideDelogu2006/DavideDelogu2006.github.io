@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;            /* niente scrollbar */
+    background-color: #000;      /* bande nere attorno al gioco */
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Le dimensioni reali sono impostate da adattaCanvas() in sketch.js (16:9, centrato) */
+canvas {
+    display: block;
+    flex: none;
+}
